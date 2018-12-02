@@ -1,0 +1,99 @@
+<style>
+.container {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.appFilter {
+    width: 620px;
+    height: 490px;
+    display: block;
+    
+}
+.top-info {
+    width: 100%;
+    height: 50px;
+    background-color: #ff8663;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+}
+.caption {
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+}
+.close {
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.appBlock {
+    display: flex;
+
+}
+.left-block {
+    width: 50%;
+
+}
+.left-search__block {
+    display: flex;
+    padding-left: 15px;
+    background-color: #f0f0f0;
+    height: 45px;
+    width: 100%;
+    align-items: center;
+}
+.search__img {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+}
+.search__text {
+    width: 250px;
+    height: 25px;
+    border: none;
+}
+.right-block {
+    width: 50%;
+}   
+</style>
+<div class="container">
+    <div class="appFilter">
+        <div class="top-info">
+            <h1 class="caption">Выберите друзей</h1>
+            <img class="close" alt="close" src="/src/img/close.png">
+        </div>
+        <div class="appBlock">
+            <div class="left-block">
+                <div class="left-search">
+                    <div class="left-search__block">
+                        <img class="search__img" src="/src/img/search.png" alt="srarch">
+                        <input class="search__text" placeholder="Начните вводить друга" type="text">
+                    </div>
+                </div>
+                <h2 class="list-freands__title">Ваши друзья</h2>
+                <ul class="list-freands">
+
+                </ul>
+            </div>
+            <div class="right-block">
+                <div class="left-search">
+                    <input class="search" placeholder="Название" type="text">
+                </div>
+                <h2 class="list-freands__title">Друзья в списке</h2>
+                <ul class="list-freands">
+
+                </ul>
+            </div>
+        </div>
+        <div class="botton">
+            <button type="button">Сохранить</button>
+        </div>
+    </div>
+</div>
