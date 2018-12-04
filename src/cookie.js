@@ -1,3 +1,5 @@
+import renderFriends from './templates/friends.hbs';
+
 VK.init({
     apiId: 6769083
 });
@@ -37,5 +39,9 @@ auth()
     })
     .then(friends => {
         console.log(friends);
-        
-})
+        const friendsHTML = renderFriends({ friendMassve: friends.items });
+        const contentFriends = document.getElementById('haveFriends');
+    
+        contentFriends.innerHTML = friendsHTML;
+    })
+
